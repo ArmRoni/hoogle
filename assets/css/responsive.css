@@ -1,0 +1,230 @@
+.slicknav_btn {
+	display: block
+}
+
+.slicknav_menu .slicknav_menutxt {
+	display: inline-block
+}
+
+.slicknav_menu .slicknav_icon {
+	padding-right: 0
+}
+
+.slicknav_collapsed .slicknav_arrow::before,
+.slicknav_menu .slicknav_icon::before,
+.slicknav_open .slicknav_arrow::before {
+	font-family: Ionicons;
+	font-style: normal;
+	font-weight: 400;
+	text-decoration: inherit;
+	color: #05385F;
+	font-size: 0.938em;
+	position: absolute;
+	top: 2px;
+	left: 0
+}
+
+.slicknav_open .slicknav_arrow::before {
+	content: "\f3d8";
+}
+
+.slicknav_collapsed .slicknav_arrow::before {
+	content: "\f3d0";
+}
+
+.slicknav_collapsed .slicknav_arrow,
+.slicknav_open .slicknav_arrow {
+	position: relative
+}
+
+.slicknav_menu .slicknav_icon::before {
+	font-family: Ionicons;
+	content: "\f394";
+	font-size: 1.875em;
+	right: 0;
+	top: 8px;
+	left: inherit;
+	color: #fff;
+	background-position: 0 0;
+	width: 30px;
+	height: 30px;
+	display: block
+}
+
+.slicknav_menu .slicknav_open .slicknav_icon::before {
+	content: "\f2d7";
+	background-position: 0 -30px
+}
+
+.slicknav_menu .slicknav_no-text {
+	margin: 0
+}
+
+.slicknav_nav {
+	clear: both
+}
+
+.slicknav_nav li,
+.slicknav_nav ul {
+	display: block
+}
+
+.slicknav_nav .slicknav_arrow {
+	float: left;
+}
+
+
+.slicknav_nav .slicknav_item {
+	cursor: pointer;
+	padding: 20px 10px 20px 0
+}
+
+.slicknav_nav .slicknav_row {
+	display: block
+}
+
+.slicknav_nav a {
+	display: block
+}
+
+.slicknav_nav .slicknav_item a,
+.slicknav_nav .slicknav_parent-link a {
+	display: inline
+}
+
+.slicknav_menu::after,
+.slicknav_menu::before {
+	content: " ";
+	display: table
+}
+
+.slicknav_menu::after {
+	clear: both
+}
+
+.slicknav_menu {
+	width: 100%;
+	display: none;
+	padding-top: 14px
+}
+
+.slicknav_btn {
+	position: absolute;
+	right: 15px;
+	top: -52px;
+	z-index: 2;
+	display: none
+}
+
+.slicknav_menu .slicknav_menutxt {
+	font-size: 1.125em;
+	color: #ff7600;
+	letter-spacing: 1px;
+	font-weight: 400;
+	line-height: 60px;
+	padding-right: 0;
+	text-transform: uppercase;
+	float: left
+}
+
+.slicknav_nav {
+	margin: 0;
+	padding: 0;
+	background: #fff
+}
+
+.slicknav_nav li {
+	display: block;
+	padding: 0;
+	border-bottom: 1px solid #058fdc;
+	font-weight: 500;
+	text-transform: uppercase;
+	transition: all 0.3s;
+}
+.slicknav_nav li:hover{
+	border-bottom: 1px solid transparent;
+
+}
+.slicknav_nav li ul li:hover{
+	border-bottom: 1px solid #058fdc;
+}
+
+.slicknav_nav li ul li {
+	font-weight: 500
+}
+
+.slicknav_nav li a {
+	color: #333333;
+	font-size: 1em;
+	padding: 14px 0;
+	font-weight: 700;
+	position: relative
+}
+
+.slicknav_nav>li>a::before{
+	content: "";
+	position: absolute;
+	width: 0px;
+	height: 2px;
+	background:#058fdc;
+	bottom: 0px;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .3s ease;
+}
+
+.slicknav_nav>li:hover>a::before{
+	opacity: 1;
+	visibility: visible;
+	width: 168px;
+}
+
+.slicknav_nav li ul li a {
+	font-size:0.9375em;
+		padding: 20px 0 20px 35px
+}
+
+.slicknav_nav li ul li ul li a {
+	font-size: 0.875em;
+	padding: 10px 0 10px 35px;
+	font-weight: 400;
+}
+
+
+.slicknav_nav .slicknav_item a,
+.slicknav_nav .slicknav_parent-link a {
+	display: inline-block!important;
+	text-decoration: none!important;
+	padding-bottom: 0;
+	padding-top: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+@media screen and (max-width:991px) {
+	
+	
+	.slicknav_menu {
+		display: block
+	}
+	#menu_holder .slicknav_nav {
+		display: block!important
+	}
+	#menu_holder {
+		display: block
+	}
+	.header_reviews_left {
+		padding-right: 0
+	}
+	
+	.header_two_button a.blue_button {
+		margin-left: 0
+	}
+	.header_right .header_two_button {
+		padding-top: 0;
+		padding-right: 12px
+	}
+	.header_right .header_two_button a {
+		margin: 0;
+		height: 40px
+	}
+}
